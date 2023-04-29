@@ -1,1 +1,5 @@
-sudo apt upgrade -y & sudo apt update -y $ sudo apt autoclean & sudo apt autoremove $ sudo apt autopurge
+sudo apt update -y && sudo apt upgrade -y 
+
+sudo apt upgrade -y && sudo apt update -y && sudo apt autoremove --purge -y
+
+sudo apt dist-upgrade -y && sudo apt update -y && sudo apt autoremove --purge -y
