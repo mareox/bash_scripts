@@ -28,14 +28,14 @@ echo "Backup copy is running..."
 backupDate=$(date '+%F')
 BACKUP_DIR="/home/mx-server/backups/BK_utkuma"
 BACKUP_NAME="kuma-db-$backupDate.tar.gz"
-DB_FILE="/home/docker/utkuma/data/kuma.db"
+DB_FILE="/home/docker/utkuma-local/data/kuma.db"
 MAX_BACKUPS=6
 
 # Create the backup directory if it doesn't exist
 # mkdir -p "$BACKUP_DIR"
 
 # Run the backup command with progress display
-cd /home/docker/utkuma/data
+cd /home/docker/utkuma-local/data
 sudo tar cf - kuma.db | pv -s $(du -sb kuma.db | awk '{print $1}') | gzip > "$BACKUP_NAME"
 
 # Check if the tar file was created successfully
