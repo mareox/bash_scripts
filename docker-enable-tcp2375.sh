@@ -11,7 +11,7 @@ cat <<EOF > /etc/docker/daemon.json
 EOF
 
 # Create the systemd override directory if it doesn't exist
-mkdir -p /etc/systemd/system/docker.service.d
+mkdir -p /etc/systemd/docker.service.d
 
 # Create the override.conf file with the specified configuration
 cat <<EOF > /etc/systemd/docker.service.d/override.conf
