@@ -14,7 +14,7 @@ EOF
 mkdir -p /etc/systemd/system/docker.service.d
 
 # Create the override.conf file with the specified configuration
-cat <<EOF > /etc/systemd/system/docker.service.d/override.conf
+cat <<EOF > /etc/systemd/docker.service.d/override.conf
 [Service]
 ExecStart=
 ExecStart=/usr/bin/dockerd
