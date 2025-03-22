@@ -11,8 +11,8 @@ cat << EOF > /etc/snmp/snmpd.conf
 # This file will create a read-only community called "MYSNMP"
 # and restricts access to address 10.10.10.1
 rocommunity mareoxlan.local 192.168.30.180
-syslocation "Bern, Switzerland"
-syscontact "John Doe"
+syslocation "Manteca, Tocino"
+syscontact "MareoX Doe"
 agentAddress udp:161
 agentuser root
 dontLogTCPWrappersConnects yes
