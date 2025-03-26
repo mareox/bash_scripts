@@ -12,7 +12,7 @@ cat << EOF > /etc/snmp/snmpd.conf
 # and restricts access to address 10.10.10.1
 rocommunity mareoxlan.local 192.168.30.180
 syslocation "Manteca, Tocino"
-syscontact "MareoX Doe"
+syscontact "Juan Du"
 agentAddress udp:161
 agentuser root
 dontLogTCPWrappersConnects yes
